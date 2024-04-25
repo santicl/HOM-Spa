@@ -1110,6 +1110,16 @@ OUT TEAM
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 
+    .NMap__Container {
+        align-items: center;
+        gap: 8px;
+    }
+
+    .NMap__Container p {
+        text-align: center;
+        flex-direction: column;
+    }
+
     
     
 
