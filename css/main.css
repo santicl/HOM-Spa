@@ -642,6 +642,16 @@ OUT TEAM
     max-width: 33.333%;
   }
 
+  .GSC-Slide img {
+    transition: all ease-in-out .2s;
+  }
+
+  .GSC-Slide:hover {
+    > img {
+        opacity: .50;
+    }
+  }
+
   .GSC-Slide {
     width: auto;
     max-width: fit-content;
