@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const prevBtn = document.querySelector('.Btn-Left-L');
         const nextBtn = document.querySelector('.Btn-Right-R');
         let indexMobile = 0;
-        let slidesToShowMobile = 1; // Agregar esta línea
+        let slidesToShowMobile = 1;
     
         function showSlidesMobile() {
             slides.forEach((slide, i) => {
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
         function nextSlideMobile() {
             indexMobile += 1;
-            if (indexMobile >= slides.length - slidesToShowMobile) {
+            if (indexMobile >= slides.length - slidesToShowMobile + 1) {
                 indexMobile = 0;
             }
             showSlidesMobile();
@@ -82,12 +82,14 @@ document.addEventListener('DOMContentLoaded', function () {
         nextBtn.addEventListener('click', nextSlideMobile);
         prevBtn.addEventListener('click', prevSlideMobile);
     
-        for (let i = 0; i < slides.length; i++) {
+        // Ocultar todas las diapositivas excepto la primera
+        for (let i = slidesToShowMobile; i < slides.length; i++) {
             slides[i].style.opacity = 0;
         }
     
         showSlidesMobile();
     }
+    
     
 
 
