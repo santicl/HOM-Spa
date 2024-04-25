@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'California';
+    src: url('../fonts/California/The\ California.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.Header-Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.Header-Container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Brand__Image {
+    position: absolute;
+    top: 60%;
+    left: 50px;
+}
+
+.Brand__Image img {
+    width: 220px;
+}
+
+.Brand__Image p {
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .Header-Container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .Header-Container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .Brand__Image {
+        position: absolute;
+        top: 60%;
+        left: 50px;
+    }
+    
+    .Brand__Image img {
+        width: 80%;
+    }
+    
+    .Brand__Image p {
+        width: 80%;
+        text-align: center;
+    }
+}

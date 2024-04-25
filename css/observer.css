@@ -1,0 +1,16 @@
+/*
+SECTION OBSERVER
+*/
+
+/* Por defecto, las secciones estarán ocultas */
+.section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Cuando la clase show-section se agrega, la sección se muestra */
+.section.show-section {
+    opacity: 1;
+    transform: translateY(0);
+}
