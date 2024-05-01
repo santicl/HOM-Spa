@@ -202,7 +202,6 @@ p {
 .text-container {
     max-height: 150px;
     /* Establece la altura máxima del contenedor de texto */
-    overflow: hidden;
     /* Oculta el exceso de contenido */
     position: relative;
     /* Añade posición relativa para el botón de "Leer más" */
