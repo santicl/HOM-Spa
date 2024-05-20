@@ -84,6 +84,10 @@ header {
     object-fit: cover; /* Asegura que el video y el poster cubran el área completa */
 }
 
+.Video-Wrapper {
+    display: none;
+}
+
 .PlayPauseButton {
     position: absolute;
     top: 50%;
@@ -161,6 +165,10 @@ header {
     .Brand__Image p {
         width: 80%;
         text-align: center;
+    }
+
+    .Video-Wrapper {
+        display: flex;
     }
 
     .Header-Container .Video-Header-Mobile {

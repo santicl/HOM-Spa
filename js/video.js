@@ -25,4 +25,8 @@ document.addEventListener("DOMContentLoaded", function() {
         headerText.style.visibility = 'visible';
         video.load(); // Recarga el video para que vuelva a mostrar el poster
     });
+
+    video.addEventListener('canplaythrough', function() {
+        playPauseBtn.style.display = 'block';
+    });
 });
