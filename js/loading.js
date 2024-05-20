@@ -1,6 +1,6 @@
 // Esperamos a que el DOM se cargue completamente
 document.addEventListener('DOMContentLoaded', function() {
-    const img1 = document.querySelector('.imgHeader');
+    const img1 = document.querySelector('.Image-Header-Header');
     const loading = document.querySelector('.loader');
 
     // Esta función oculta el loader y realiza otras acciones cuando la imagen está completamente cargada
